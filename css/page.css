@@ -1028,6 +1028,7 @@ footer .cert .split:nth-child(2) {
     align-items: center;
     justify-content: center;
     padding: 15px 11px;
+    z-index: 1000;
 }
 h4 {
     font-size:12px;
