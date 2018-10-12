@@ -396,40 +396,28 @@ li {
     line-height: 17px;
     padding: 45px 24px 0 24px;
 }
-
-.toefl_standard_list li:nth-child(1) {
-    background-image: url('../assets/subject/阅读-灰.png');
+.toefl_standard_list li {
+    filter: grayscale(100%);
+    transition: all .35s ease
 }
-
-.toefl_standard_list li:nth-child(1):hover {
+.toefl_standard_list li:hover {
     transform: translateY(-8px);
+    filter: grayscale(0%);
+}
+.toefl_standard_list li:nth-child(1) {
     background-image: url('../assets/subject/阅读-彩.png');
 }
 
-.toefl_standard_list li:nth-child(2) {
-    background-image: url('../assets/subject/听力-灰.png');
-}
 
-.toefl_standard_list li:nth-child(2):hover {
-    transform: translateY(-8px);
+.toefl_standard_list li:nth-child(2) {
     background-image: url('../assets/subject/听力-彩.png');
 }
 
 .toefl_standard_list li:nth-child(3) {
-    background-image: url('../assets/subject/口语-灰.png');
-}
-
-.toefl_standard_list li:nth-child(3):hover {
-    transform: translateY(-8px);
     background-image: url('../assets/subject/口语-彩.png');
 }
 
 .toefl_standard_list li:nth-child(4) {
-    background-image: url('../assets/subject/写作-灰.png');
-}
-
-.toefl_standard_list li:nth-child(4):hover {
-    transform: translateY(-8px);
     background-image: url('../assets/subject/写作-彩.png');
 }
 
@@ -457,7 +445,7 @@ li {
     font-size: 9px;
     line-height: 17px;
     font-family:SourceHanSansCN-Regular;
-    font-weight: 100;
+    font-weight: 200;
 }
 
 .toefl_standard_bg1 {
