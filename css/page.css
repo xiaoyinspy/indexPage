@@ -18,7 +18,8 @@ button, input {
 }
 
 body {
-	min-width: 1440px;
+    min-width: 1440px;
+    max-width: 1440px;
 }
 
 ul,
