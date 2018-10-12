@@ -1009,8 +1009,8 @@ footer .cert .split:nth-child(2) {
     background: #23272B;
 }
 .navigation {
-    position: fixed;
-    top: 150px;
+    position: sticky;
+    top: 40px;
     left: 105px;
     width: 98px;
     height: 364px;
@@ -1023,6 +1023,8 @@ footer .cert .split:nth-child(2) {
     justify-content: center;
     padding: 15px 11px;
     z-index: 1000;
+    float: left;
+    margin-top: 90px
 }
 h4 {
     font-size:12px;
@@ -1031,9 +1033,14 @@ h4 {
     color:rgba(46,50,54,1);
     line-height:18px;
 }
-.nav >li {
+.nav-item {
     margin-top: 12px;
     text-align: center;
+    color: #8F9DA5;
+    cursor: pointer;
+}
+.nav-item.active {
+    color: #3399FF;
 }
 .split1 {
     width:75px;

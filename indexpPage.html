@@ -12,44 +12,6 @@
 
 
 <body id="all_date">
-	<nav class="navigation">
-			<h4>快速导航<h4>
-			<div class="split1"></div>
-			<ul class="nav">
-				<li>
-					<a href="#toefl_ibt">必知事项</a>
-				</li>
-				<li>
-					<a href="#toefl_time">考试时间</a>
-				</li>
-				<li>
-					<a href="#toefl_compare">考试对比</a>
-				</li>
-				<li>
-					<a href="#toefl_standard">评分标准</a>
-				</li>
-				<li>
-					<a href="#toefl_ability_test">能力测评</a>
-				</li>
-				<li>
-					<a href="#toefl_experience">智适应学习</a>
-				</li>
-				<li>
-					<a href="#toefl_teacher_star">师资力量</a>
-				</li>
-				<li>
-					<a href="#toefl_learning_center">学习环境</a>
-				</li>
-				<li>
-					<a href="#toefl_big_brand">关于智课</a>
-				</li>
-			</ul>
-			<div class="split1"></div>
-			<div id="toTop" style="text-align: center; cursor: pointer;">
-				<img style="width: 12px; height: 8px;" src="./assets/icon/6-ic回到顶部.png">
-				<h4 class="toTop">回到顶部<h4>
-			</div>
-	</nav>
 	<header id="target" class="head">
 		<a src="https://www.smartstudy.com/">
 			<image class="logo" src="./assets/logo.png"/>
@@ -69,6 +31,26 @@
 			<a class="ibt_button toefl_study"><span>立即学习</span></a>
 		</div>
 	</header>
+	<nav class="navigation">
+		<h4>快速导航<h4>
+		<div class="split1"></div>
+		<ul id="nav">
+			<li class="nav-item" name="toefl_ibt">必知事项</li>
+			<li class="nav-item" name="toefl_time">考试时间</li>
+			<li class="nav-item" name="toefl_compare">考试对比</li>
+			<li class="nav-item" name="toefl_standard">评分标准</li>
+			<li class="nav-item" name="toefl_ability_test">能力测评</li>
+			<li class="nav-item" name="toefl_experience">智适应学习</li>
+			<li class="nav-item" name="toefl_teacher_star">师资力量</li>
+			<li class="nav-item" name="toefl_learning_center">学习环境</li>
+			<li class="nav-item" name="toefl_big_brand">关于智课</li>
+		</ul>
+		<div class="split1"></div>
+		<div id="toTop" style="text-align: center; cursor: pointer;">
+			<img style="width: 12px; height: 8px;" src="./assets/icon/6-ic回到顶部.png">
+			<h4 class="toTop">回到顶部<h4>
+		</div>
+	</nav>
 	<div class="toefl_ibt" id="toefl_ibt">
 		<h3>托福考试必知事项</h3>
 		<div class="ibt_title1"></div>
@@ -383,6 +365,19 @@
 				behavior: 'smooth',
       	block: 'start',
 			});
+		}
+		nav.onclick = function(e) {
+			var ele = document.querySelector('#'+e.target.getAttribute('name'))
+			if (ele) {
+				var items = document.querySelectorAll('.nav-item')
+				for (var i = 0; i < items.length; i++) {
+					items[i] === e.target ? items[i].classList.add('active') : items[i].classList.remove('active')
+				}
+				ele.scrollIntoView({
+					behavior: 'smooth',
+	      	block: 'start',
+				});
+			}
 		}
 </script>
 </html>
