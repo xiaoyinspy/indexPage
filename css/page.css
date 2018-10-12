@@ -30,6 +30,7 @@ li {
 .logo {
     width: 57px;
     margin-left: 270px;
+    margin-top: 6px;
 }
 
 .toefl_pic {
@@ -1052,7 +1053,6 @@ h4 {
     font-weight:400;
     color:rgba(252,98,56,1);
     line-height:14px;
-    cursor: pointer;
 }
 .toefl_big_brand {
     background-image: url('../assets/BG用户推荐.png');
