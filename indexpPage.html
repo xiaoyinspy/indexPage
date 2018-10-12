@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="zh_CN">
-
 <head>
 	<meta charset="utf-8">
 	<title>托福报名指南-智课</title>
@@ -11,8 +10,6 @@
 	<a rel="shortcut icon" href="./assets/favicon.ico">
 	<a rel="apple-touch-icon-precomposed" href="./favicon.ico">
 	<!-- Safari保存页面到桌面的图标 -->
-
-	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/page.css">
 </head>
 
@@ -32,9 +29,10 @@
 						<div>天体验</div>
 					</span>
 				</div>
-				<input class="login_input" placeholder="请填入手机号"></input>
-				<button class="login_button">立即免费领取</button>
+				<div class="login_input1"><input class="login_input" placeholder="请填入手机号"></input></div>
+				<a class="login_button">立即免费领取</a>
 			</div>
+			<a class="ibt_button toefl_study"><span>立即学习</span></a>
 		</div>
 	</header>
 	<div class="toefl_ibt" id="toefl_ibt">
@@ -126,10 +124,17 @@
 				</tr>
 			</tbody>
 		</table>
+		<img class="toefl_compare_line1 toefl_line" src="./assets/渐变线.png" />
+		<img class="toefl_compare_line2 toefl_line" src="./assets/渐变线.png" />
+		<img class="toefl_compare_line3 toefl_line" src="./assets/渐变线.png" />
+		<img class="toefl_compare_line4 toefl_line" src="./assets/渐变线.png" />
+		<img class="toefl_compare_line5 toefl_line" src="./assets/渐变线.png" />
+		<img class="toefl_compare_line6 toefl_line" src="./assets/渐变线.png" />
 		<img class="toefl_compare_bg1 toefl_pic" src="./assets/float/中间1.png" />
 		<img class="toefl_compare_bg2 toefl_pic" src="./assets/float/中间2.png" />
 		<img class="toefl_compare_bg3 toefl_pic" src="./assets/float/左侧1.png" />
 		<a class="ibt_button"><span>了解更多考试信息</span><img class="ibt_arraw" src="./assets/more.png" /></a>
+	
 	</div>
 	<div class="toefl_standard" id="toefl_standard">
 		<h3>托福评分标准</h3>
@@ -347,8 +352,6 @@
 	</nav>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/index.js"></script>
 <script>
 	// 获取用户cookie
 	function get_cookie(Name) {
@@ -372,28 +375,11 @@
 		const token = user.token; // eslint-disable-line
 		if (token) {
 			$('.login_in').css('display','none');
+			$('.toefl_study').css('display','block');
 		} else {
+			$('.toefl_study').css('display','none');
 			$('.login_in').css('display','block');
 		}
-		$('#toefl_banner').css('background-image', `url('./assets/banner${token ? '' : '1'}.png')`);
-		$(".box").slideShow({
-				"imgList" : [
-					'./assets/slide_show/1月.png',
-					'./assets/slide_show/2月.png',
-					'./assets/slide_show/3月.png',
-					'./assets/slide_show/4月.png',
-					'./assets/slide_show/5月.png',
-					'./assets/slide_show/6月.png',
-					'./assets/slide_show/7月.png',
-					'./assets/slide_show/8月.png',
-					'./assets/slide_show/9月.png',
-					'./assets/slide_show/10月.png',
-					'./assets/slide_show/11月.png',
-					'./assets/slide_show/12月.png',
-				]
-		});
-		toTop.onclick = function(){
-			target.scrollIntoView();
-		}
+		$('#toefl_banner').css('background-image', `url('./assets/banner${token ? '1' : ''}.png')`);
 </script>
 </html>

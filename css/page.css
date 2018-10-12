@@ -13,13 +13,12 @@ a {
     cursor: pointer;
     outline: none;
 }
-button {
+button, input {
   outline: none;
 }
 
 body {
-    /* background-color: aliceblue; */
-    /* max-width: 1440px; */
+	min-width: 1440px;
 }
 
 ul,
@@ -38,9 +37,8 @@ li {
 }
 
 .toefl_banner {
-    /* max-width: 1440px; */
     height: 381px;
-    background-size: 100% 100%;
+    background-size: 1440px;
     position: relative;
 }
 
@@ -51,7 +49,7 @@ li {
     border-radius: 10px;
     position: absolute;
     top: 54px;
-    right: 274px;
+    right: 374px;
     background-color: white;
 }
 
@@ -59,6 +57,7 @@ li {
     height: 90px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .num {
@@ -84,6 +83,15 @@ li {
     margin-top: 18px;
 }
 
+.login_input1 {
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    border: 1px solid #8F9DA5;
+    margin-top: 6px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
 .login_input {
     outline: 0px;
     width: 150px;
@@ -93,8 +101,7 @@ li {
     font-weight: 500;
     color: rgba(143, 157, 165, 1);
     line-height: 15px;
-    margin-top: 6px;
-    margin-bottom: 15px;
+    border: 0px;
 }
 
 .login_button {
@@ -109,6 +116,7 @@ li {
     color: rgba(255, 255, 255, 1);
     line-height: 15px;
     background-color: #3399FF;
+    border-radius: 5px;
 }
 
 .toefl_ibt {
@@ -172,7 +180,8 @@ li {
     padding: 15px 26px;
 }
 .ibt_list >li:hover {
-    box-shadow:0px 3px 8px 0px rgba(51,153,255,0.16);
+		box-shadow:0px 3px 8px 0px rgba(51,153,255,0.16);
+		transform: translateY(-8px);
     border-radius:8px;
 }
 
@@ -322,9 +331,6 @@ li {
     padding: 15px 10px;
     font-size: 12px;
     font-family: Verdana;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: #DDE4EB;
 }
 
 #table-1 th {
@@ -777,18 +783,6 @@ footer .main .middle {
     }
 }
 
-@media screen and (min-width: 984px) {
-    footer .main .middle-center {
-        width: 470px;
-    }
-}
-
-@media screen and (min-width: 1224px) {
-    footer .main .middle-center {
-        width: 470px;
-    }
-}
-
 footer .main .right {
     display: none;
 }
@@ -824,7 +818,7 @@ footer .main .right {
 
 @media screen and (min-width: 1224px) {
     footer .main {
-        width: 1200px;
+        min-width: 1200px;
         margin: 0 auto;
     }
     footer .main .right .item {
@@ -1068,4 +1062,36 @@ h4 {
 }
 .toefl_big_brand {
     background-image: url('../assets/BG用户推荐.png');
+}
+.toefl_line {
+	position: absolute;
+	width: 900px;
+	height: 1px;
+	opacity: 0.6;
+
+}
+.toefl_compare_line1 {
+	top: 195px;
+}
+.toefl_compare_line2 {
+	top: 267px;
+}
+.toefl_compare_line3 {
+	top: 319px;
+}
+.toefl_compare_line4 {
+	top: 414px;
+}
+.toefl_compare_line5 {
+	top: 507px;
+}
+.toefl_compare_line6 {
+	top: 581px;
+}
+.toefl_study {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(#FF92EA, #FF4490);
 }
