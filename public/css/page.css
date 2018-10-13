@@ -106,7 +106,7 @@ li {
     border: 0px;
 }
 
-.login_button {
+#login_button {
     display: flex;
     width: 150px;
     height: 30px;
