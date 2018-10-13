@@ -1,0 +1,1118 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    background-image: none;
+    border-radius: 0;
+    cursor: pointer;
+    outline: none;
+}
+button, input {
+  outline: none;
+}
+
+body {
+    min-width: 1440px;
+    max-width: 1440px;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.logo {
+    width: 57px;
+    margin-left: 270px;
+    margin-top: 6px;
+}
+
+.toefl_pic {
+    position: absolute;
+    /* z-index: -1; */
+}
+
+.toefl_banner {
+    height: 381px;
+    background-size: 1440px;
+    position: relative;
+}
+
+.login_in {
+    width: 195px;
+    height: 210px;
+    padding: 9px 23px 30px 23px;
+    border-radius: 10px;
+    position: absolute;
+    top: 54px;
+    right: 374px;
+    background-color: white;
+}
+
+.login_free {
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.num {
+    width: 41px;
+    font-size: 68px;
+    font-family: PingFangSC-Semibold;
+    font-weight: 600;
+    color: rgba(245, 166, 35, 1);
+    line-height: 90px;
+}
+
+.free_experience {
+    margin-left: 8px;
+}
+
+.login_text {
+    font-size: 18px;
+    font-family: PingFang-SC-Light;
+    font-weight: 300;
+    color: rgba(46, 50, 54, 1);
+    line-height: 23px;
+    margin-bottom: 6px;
+    margin-top: 18px;
+}
+
+.login_input1 {
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    border: 1px solid #8F9DA5;
+    margin-top: 6px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.login_input {
+    outline: 0px;
+    width: 150px;
+    height: 30px;
+    font-size: 11px;
+    font-family: PingFang-SC-Medium;
+    font-weight: 500;
+    color: rgba(143, 157, 165, 1);
+    line-height: 15px;
+    border: 0px;
+}
+
+.login_button {
+    display: flex;
+    width: 150px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    font-family: PingFangSC-Semibold;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    line-height: 15px;
+    background-color: #3399FF;
+    border-radius: 5px;
+}
+
+.toefl_ibt {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(-49px)
+}
+
+.toefl_bg {
+    width: 274px;
+    height: 205px;
+    position: absolute;
+    background-image: url('../assets/bg-气球.png');
+    background-size: 274px auto;
+    background-repeat: no-repeat;
+    left: 134px;
+    top: 352px;
+}
+
+.ibt_title1 {
+    width: 161px;
+    height: 12px;
+    background: rgba(255, 248, 0, 1);
+    z-index: -1;
+    margin-top: -12px;
+}
+
+.ibt_button {
+    width: 195px;
+    height: 38px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: SourceHanSansCN-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    line-height: 22px;
+    border-radius: 10px;
+    background: linear-gradient(#00DFFF, #007FFF);
+    margin-bottom: 60px;
+}
+
+.ibt_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.ibt_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 154px;
+    margin-right: 38px;
+    padding: 15px 26px;
+    transition: all .35s ease;
+}
+.ibt_list >li:hover {
+		box-shadow:0px 3px 8px 0px rgba(51,153,255,0.16);
+		transform: translateY(-8px);
+    border-radius:8px;
+}
+
+.ibt_item:last-child {
+    margin-right: 0px;
+}
+
+.ibt_img {
+    width: 45px;
+    margin-bottom: 15px;
+}
+
+.ibt_title {
+    font-size: 14px;
+    font-family: SourceHanSansCN-Bold;
+    font-weight: bold;
+    color: rgba(51, 153, 255, 1);
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+
+.ibt_item:first-child .ibt_title {
+    color: rgba(51, 153, 255, 1);
+}
+
+.ibt_item:nth-child(2) .ibt_title {
+    color: rgba(162, 60, 255, 1);
+}
+
+.ibt_item:nth-child(3) .ibt_title {
+    color: rgba(252, 98, 56, 1);
+}
+
+.ibt_item:last-child .ibt_title {
+    color: rgba(60, 185, 139, 1);
+}
+
+.ibt_discription {
+    font-size: 11px;
+    font-family: SourceHanSansCN-Regular;
+    font-weight: 400;
+    color: rgba(46, 50, 54, 1);
+    line-height: 18px;
+    word-break: break-all;
+}
+
+.ibt_arraw {
+    width: 6px;
+    height: 9px;
+    margin-left: 5px;
+}
+
+.toefl_time {
+    height: 672px;
+    width: 100%;
+    background:rgba(230,241,247,0.28);
+    z-index: -2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ibt_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 672px;
+}
+
+.toefl_time_bg {
+    bottom: -103px;
+    right: 0;
+    width: 140px;
+    height: 341px;
+}
+
+.ibt_title2 {
+    width: 180px;
+    height: 12px;
+    background: rgba(198, 227, 255, 1);
+    z-index: -1;
+    margin-top: -12px;
+}
+
+.ibt_title3 {
+    width: 240px;
+    height: 12px;
+    background: rgba(255, 181, 181, 1);
+    z-index: -1;
+    margin-top: -12px;
+}
+
+.ibt_title4 {
+    width: 119px;
+    height: 12px;
+    background-color: rgba(204, 181, 255, 1);
+    z-index: 1;
+    margin-top: -12px;
+}
+.ibt_title9 {
+    z-index: 2;
+}
+
+.ibt_title5 {
+    display: inline-block;
+    width: 188px;
+    height: 12px;
+    background-color: rgba(198, 227, 255, 1);
+    z-index: -1;
+    margin-top: -12px;
+}
+
+.ibt_title6 {
+    display: inline-block;
+    width: 228px;
+    height: 12px;
+    background-color: rgba(255, 181, 181, 1);
+    z-index: -1;
+    margin-top: -12px;
+}
+
+.toefl_compare {
+    display: flex;
+    width: 100%;
+    height: 716px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 60px;
+}
+
+#table-1 {
+    width: 900px;
+    height: 415px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+#table-1 td,
+#table-1 th {
+    width: 20%;
+    padding: 15px 10px;
+    font-size: 12px;
+    font-family: Verdana;
+}
+
+#table-1 th {
+    font-size: 14px;
+    font-family: SourceHanSansCN-Medium;
+    font-weight: 500;
+    color: rgba(46, 50, 54, 1);
+    line-height: 20px;
+}
+
+#table-1 td {
+    font-size: 14px;
+    font-family: SourceHanSansCN-Regular;
+    font-weight: 400;
+    color: rgba(109, 121, 127, 1);
+    line-height: 21px;
+}
+#table-1 #sub_title {
+    font-weight:500;
+    color:rgba(46,50,54,1);
+}
+.toefl_standard {
+    display: flex;
+    width: 100%;
+    height: 608px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background:rgba(252,251,253,1);
+}
+
+.toefl_compare_bg1 {
+    top: 86px;
+    left: 305px;
+    width: 73px;
+    height: 75px;
+}
+
+.toefl_compare_bg2 {
+    bottom: 143px;
+    right: 178px;
+    width: 195px;
+    height: 203px;
+}
+
+.toefl_compare_bg3 {
+    bottom: 0;
+    left: 0;
+    width: 383px;
+    height: 235px;
+}
+
+.toefl_standard_list {
+    margin-top: 68px;
+    margin-bottom: 60px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.toefl_standard_item {
+    width: 225px;
+    font-size: 15px;
+    font-family: SourceHanSansCN-Medium;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    line-height: 17px;
+    padding: 45px 24px 0 24px;
+}
+.toefl_standard_list li {
+    filter: grayscale(100%);
+    transition: all .35s ease
+}
+.toefl_standard_list li:hover {
+    transform: translateY(-8px);
+    filter: grayscale(0%);
+}
+.toefl_standard_list li:nth-child(1) {
+    background-image: url('../assets/subject/阅读-彩.png');
+}
+
+
+.toefl_standard_list li:nth-child(2) {
+    background-image: url('../assets/subject/听力-彩.png');
+}
+
+.toefl_standard_list li:nth-child(3) {
+    background-image: url('../assets/subject/口语-彩.png');
+}
+
+.toefl_standard_list li:nth-child(4) {
+    background-image: url('../assets/subject/写作-彩.png');
+}
+
+.toefl_standard_title {
+    font-size: 23px;
+    font-family: SourceHanSansCN-Medium;
+    font-weight: 500;
+    line-height: 17px;
+}
+
+.toefl_standard_title1 {
+    margin-top: 12px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.toefl_standard_icon {
+    width: 26px;
+    height: 18px;
+    margin-right: 6px;
+}
+
+.toefl_standard_text {
+    font-size: 9px;
+    line-height: 17px;
+    font-family:SourceHanSansCN-Regular;
+    font-weight: 200;
+}
+
+.toefl_standard_bg1 {
+    bottom: -125px;
+    left: 59px;
+    width: 263px;
+}
+
+.toefl_ability_test {
+    height: 610px;
+    position: relative;
+    /* max-width: 1440px; */
+    background-size: 100% 100%;
+    background-image: url('../assets/free_test.png');
+    overflow: hidden;
+}
+
+.toefl_ability_test_bg1 {
+    bottom: 131px;
+    left: 231px;
+    width: 109px;
+}
+
+.toefl_ability_test_bg2 {
+    top: 131px;
+    right: 0;
+    width: 233px;
+}
+
+.toefl_ability_button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 60px;
+    margin-bottom: 0px;
+}
+
+.toefl_experience {
+    /* max-width: 1440px; */
+    background:rgba(252,251,253,1);
+    position: relative;
+    height: 424px;
+    background-size: 100% 100%;
+    background-image: url('../assets/自学神器.png');
+}
+
+.toefl_experience_bg1 {
+    top: 0;
+    left: 0;
+    width: 129px;
+    height: 509px;
+}
+
+.toefl_experience_bg2 {
+    top: 377px;
+    right: 319px;
+    width: 161px;
+}
+
+.toefl_experience_button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 60px;
+    margin-bottom: 0px;
+}
+
+.toefl_teacher_star {
+    position: relative;
+    height: 569px;
+    background-size: 100% 100%;
+    background-image: url('../assets/明星师资.png');
+}
+
+.toefl_teacher_bg1 {
+    bottom: -148px;
+    right: 0;
+    width: 140px;
+    height: 341px;
+}
+
+.toefl_learning_center {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 586px;
+    background-size: 100% 100%;
+    /* max-width: 1440px; */
+}
+
+.toefl_learning_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.learning_center_container {
+    margin: 60px 0px;
+}
+
+.learning_center_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.learning_center_list li {
+    width: 214px;
+    height: 135px;
+    margin-right: 15px;
+}
+
+.learning_center_list li>img {
+    width: 214px;
+    height: 135px;
+}
+
+.learning_center_list li:last-child {
+    margin-right: 0px;
+}
+
+.toefl_big_brand {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 314px;
+    background-size: 100% 100%;
+    /* max-width: 1440px; */
+}
+
+.toefl_brand_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.toefl_brand_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 31px;
+}
+
+.toefl_brand_item img {
+    width: 125px;
+    height: 83px;
+    margin-bottom: 9px;
+}
+
+.toefl_brand_item span {
+    font-size: 12px;
+    font-family: SourceHanSansCN-Medium;
+    font-weight: 500;
+    color: rgba(102, 102, 102, 1);
+    line-height: 18px;
+}
+
+footer {
+    position: relative;
+    background: #191c20;
+}
+
+footer .brand {
+    padding: 0 20px 20px;
+    background: #2D3237;
+    text-align: center;
+    display: none;
+}
+
+footer .brand:before,
+footer .brand:after {
+    content: ' ';
+    display: table;
+    clear: both;
+}
+
+@media screen and (min-width: 984px) {
+    footer .brand {
+        display: block;
+        padding: 0 0 48px;
+    }
+}
+
+footer .brand .item {
+    display: inline-block;
+    width: 140px;
+    margin-left: 16px;
+}
+
+footer .brand .item:first-child {
+    margin-left: 0;
+}
+
+footer .brand .item:nth-child(3),
+footer .brand .item:nth-child(4),
+footer .brand .item:nth-child(5),
+footer .brand .item:nth-child(6) {
+    display: none;
+}
+
+footer .brand .item img {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    width: 98.58%;
+    margin-left: -3.3%;
+}
+
+@media screen and (min-width: 984px) {
+    footer .brand .item {
+        width: 140px;
+        margin: 0 12px;
+    }
+
+    footer .brand .item:first-child {
+        margin-left: 12px;
+    }
+
+    footer .brand .item:nth-child(3),
+    footer .brand .item:nth-child(4),
+    footer .brand .item:nth-child(5),
+    footer .brand .item:nth-child(6) {
+        display: inline-block;
+    }
+
+    footer .brand .item img {
+        width: 106.67%;
+    }
+}
+
+@media screen and (min-width: 1224px) {
+    footer .brand .item {
+        width: 180px;
+    }
+}
+
+footer .brand .item .title {
+    color: #646464;
+    text-align: center;
+    font-size: 10px;
+}
+
+@media screen and (min-width: 1000px) {
+    footer .brand .item .title {
+        font-size: 14px;
+    }
+}
+
+footer .main {
+    padding: 20px;
+    background: #23272B;
+    color: #fff;
+    text-align: center;
+}
+
+footer .main:before,
+footer .main:after {
+    content: ' ';
+    display: table;
+    clear: both;
+}
+
+@media screen and (min-width: 984px) {
+    footer .main {
+        padding: 24px 0;
+        text-align: left;
+    }
+}
+
+footer .main .middle {
+    display: none;
+}
+
+@media screen and (min-width: 984px) {
+    footer .main .middle {
+        float: left;
+        width: 265px;
+        display: block;
+    }
+
+    footer .main .middle .title {
+        height: 24px;
+        color: #a0a0a0;
+        font-size: 18px;
+        margin-bottom: -4px;
+    }
+
+    footer .main .middle .link {
+        margin-left: -12px;
+        font-size: 14px;
+        vertical-align: baseline;
+    }
+
+    footer .main .middle .link a {
+        float: left;
+        display: block;
+        color: #646464;
+        margin-left: 12px;
+        margin-top: 14px;
+
+    }
+}
+
+@media screen and (min-width: 1224px) {
+    footer .main .middle {
+        width: 265px;
+    }
+}
+
+footer .main .right {
+    display: none;
+    margin-right: 48px;
+}
+
+@media screen and (min-width: 984px) {
+    footer .main .right {
+        float: right;
+        display: block;
+    margin-right: 48px;
+    }
+
+    footer .main .right .item {
+        float: left;
+        width: 104px;
+    }
+
+    footer .main .right .item:nth-child(1),
+    footer .main .right .item:nth-child(2) {
+        display: none;
+    }
+
+    footer .main .right .item img {
+        width: 100%;
+    }
+
+    footer .main .right .item .title {
+        margin-top: 4px;
+        text-align: center;
+        font-size: 14px;
+        color: #646464;
+    }
+}
+
+@media screen and (min-width: 1224px) {
+    footer .main {
+        min-width: 1200px;
+        margin: 0 auto;
+    }
+    footer .main .right .item {
+        margin-left: 24px;
+    }
+
+    footer .main .right .item:first-child {
+        margin-left: 0;
+    }
+
+    footer .main .right .item:nth-child(1),
+    footer .main .right .item:nth-child(2) {
+        display: block;
+    }
+}
+
+footer .main .mobile-care {
+    font-size: 14px;
+}
+
+footer .main .mobile-care a {
+    float: left;
+    width: 33.333333%;
+    color: #646464;
+}
+
+footer .main .mobile-care a>img,
+footer .main .mobile-care a>b {
+    width: 48px;
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    margin-top: 20px;
+}
+
+footer .main .mobile-care b {
+    background: #39f;
+    border-radius: 100%;
+}
+
+footer .main .mobile-care b img {
+    width: 22px;
+    margin-top: 12px;
+}
+
+@media screen and (min-width: 984px) {
+    footer .main .mobile-care {
+        display: none;
+    }
+}
+
+footer .mobile-about-us {
+    padding: 20px 0;
+    background: #252c34;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+footer .mobile-about-us a {
+    color: #fff;
+    margin: 0 8px;
+}
+
+footer .mobile-about-us p {
+    font-size: 12px;
+    color: #a0a0a0;
+    margin-top: 12px;
+}
+
+@media screen and (min-width: 984px) {
+    footer .mobile-about-us {
+        display: none;
+    }
+}
+
+footer .cert {
+    padding: 8px 0 7px;
+    background: #191C20;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer .cert:before,
+footer .cert:after {
+    content: ' ';
+    display: table;
+    clear: both;
+}
+
+@media screen and (min-width: 984px) {
+    footer .cert {
+        padding: 8px 0 7px;
+    }
+}
+
+footer .cert .link {
+    display: none;
+}
+
+@media screen and (min-width: 984px) {
+    footer .cert .link {
+        display: block;
+        float: left;
+        width: 562px;
+    }
+
+    footer .cert .link a {
+        color: #646464;
+        margin-left: 7px;
+    }
+
+    footer .cert .link a:first-child {
+        margin-left: 0;
+    }
+}
+
+footer .cert .info {
+    text-align: center;
+    color: #646464;
+}
+
+@media screen and (min-width: 984px) {
+    footer .cert .info {
+        float: right;
+        width: 400px;
+        text-align: right;
+    }
+}
+
+footer .cert .info .item {
+    margin-left: 8px;
+}
+
+footer .cert .info .item:first-child {
+    margin-left: 0;
+}
+
+footer .cert .info .item:nth-child(3) {
+    display: none;
+}
+
+@media screen and (min-width: 984px) {
+    footer .cert .info .item:nth-child(3) {
+        display: inline-block;
+    }
+}
+
+footer .cert .split {
+    margin-left: 6px;
+    vertical-align: 1px;
+}
+
+footer .cert .split:nth-child(2) {
+    display: none;
+}
+
+@media screen and (min-width: 984px) {
+    footer .cert .split:nth-child(2) {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    footer {
+        position: static;
+    }
+}
+@media screen and (min-width: 1224px) {
+    .cert_container {
+        width: 1200px;
+    }
+}
+
+@media screen and (min-width: 984px) {
+    .cert_container {
+        width: 960px;
+    }
+}
+@media screen and (min-width: 1224px) {
+    .inner{
+        width: 1200px;
+    }
+}
+
+@media screen and (min-width: 984px) {
+    .inner {
+        width: 960px;
+    }
+}
+.cert_container, .inner{
+    margin: 0 auto;
+}
+.inner_container {
+    width: 100%;
+    background: #23272B;
+}
+.navigation {
+    position: sticky;
+    top: 40px;
+    left: 105px;
+    width: 98px;
+    height: 364px;
+    background: white;
+    box-shadow:0px 3px 8px 0px rgba(51,153,255,0.16);
+    border-radius:8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 11px;
+    z-index: 1000;
+    float: left;
+    margin-top: 90px
+}
+h4 {
+    font-size:12px;
+    font-family:SourceHanSansCN-Medium;
+    font-weight:500;
+    color:rgba(46,50,54,1);
+    line-height:18px;
+}
+.nav-item {
+    margin-top: 12px;
+    text-align: center;
+    color: #8F9DA5;
+    cursor: pointer;
+}
+.nav-item.active {
+    color: #3399FF;
+}
+.split1 {
+    width:75px;
+    height:1px;
+    background:rgba(247,248,250,1);
+    border-radius:0px;
+    margin-top: 12px;
+}
+.toTop {
+    font-size:11px;
+    font-family:SourceHanSansCN-Regular;
+    font-weight:400;
+    color:rgba(252,98,56,1);
+    line-height:14px;
+}
+.toefl_big_brand {
+    background-image: url('../assets/BG用户推荐.png');
+}
+.toefl_line {
+	position: absolute;
+	width: 900px;
+	height: 1px;
+	opacity: 0.6;
+
+}
+.toefl_compare_line1 {
+	top: 195px;
+}
+.toefl_compare_line2 {
+	top: 267px;
+}
+.toefl_compare_line3 {
+	top: 319px;
+}
+.toefl_compare_line4 {
+	top: 414px;
+}
+.toefl_compare_line5 {
+	top: 507px;
+}
+.toefl_compare_line6 {
+	top: 581px;
+}
+.toefl_study {
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(#FF92EA, #FF4490);
+}
+.toefl_study {
+    line-height: 38px;
+}
+.swiper-container1 {
+    width: 1000px;
+}
+.swiper-slide {
+    width: 407px;
+    /* transform: scale(0.8); */
+}
+.swiper-slide >img {
+    width: 100%;
+}
+.swiper-slide1 {
+    width: 100%;
+}
+.swiper-slide-prev > img{
+    transform: scale(0.8) !important;
+}
+.swiper-slide-next > img{
+    transform: scale(0.8) !important;
+}
