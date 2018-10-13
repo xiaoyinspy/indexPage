@@ -293,6 +293,9 @@ li {
 .ibt_title9 {
     z-index: 2;
 }
+.ibt_title10 {
+    margin-top: 60px;
+}
 
 .ibt_title5 {
     display: inline-block;
@@ -308,7 +311,7 @@ li {
     width: 228px;
     height: 12px;
     background-color: rgba(255, 181, 181, 1);
-    z-index: -1;
+    z-index: 1;
     margin-top: -12px;
 }
 
@@ -508,12 +511,14 @@ li {
     left: 0;
     width: 129px;
     height: 509px;
+    z-index: 2;
 }
 
 .toefl_experience_bg2 {
     top: 377px;
     right: 319px;
     width: 161px;
+    z-index: 2;
 }
 
 .toefl_experience_button {
